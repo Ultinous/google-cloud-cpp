@@ -25,6 +25,7 @@
 
 override_dh_auto_configure:
 	echo aaa
+	cd cmakeFiles && conan install . --build=missing
 	cmake -H. -Bobj-x86_64-linux-gnu -DCMAKE_INSTALL_PREFIX:PATH=$(DESTDIR) -DBUILD_TESTING=OFF -DCMAKE_MODULE_PATH=/tmp/ubuntu/google-cloud-cpp/ultinous-google-cloud-cpp/cmakeFiles -DGOOGLE_CLOUD_CPP_ENABLE_EXAMPLES=OFF
 override_dh_auto_build:
 	echo bbb
