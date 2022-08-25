@@ -3,4 +3,18 @@ The Debian Package ultinous-google-cloud-cpp
 
 Comments regarding the Package
 
- -- FRANK Kristof <oturw@hans.lan.ultinous.com>  Thu, 25 Aug 2022 10:19:42 +0000
+ -- FRANK Kristof <oturw@ultinous.com>  Thu, 25 Aug 2022 10:19:42 +0000
+
+apt update
+apt install gnupg
+echo 'deb http://deb.ultinous.com/ bionic dev-pc' > /etc/apt/sources.list.d/ultinous-repo-bionic-dev.list
+apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BD42393432D5363E
+apt update
+apt install gnupg cmake build-essential devscripts debhelper python3.8 python3.8-venv python3-pip vim mc
+
+python3.8 -m pip install --upgrade pip
+python3.8 -m pip install conan
+conan profile update settings.compiler.libcxx=libstdc++11 default
+#conan install . --build=missing
+cd /tmp/ubuntu/google-cloud-cpp/ultinous-google-cloud-cpp
+debuild -us -uc -b
