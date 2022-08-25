@@ -254,7 +254,7 @@ add_custom_target(google-cloud-cpp-protos)
 # Each subproject adds dependencies to this target to have their docs generated.
 add_custom_target(doxygen-docs)
 
-find_package(absl CONFIG REQUIRED)
+find_package(absl REQUIRED)
 if (${GOOGLE_CLOUD_CPP_ENABLE_GRPC})
     find_package(gRPC REQUIRED QUIET)
     find_package(ProtobufWithTargets REQUIRED QUIET)

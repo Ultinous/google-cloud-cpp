@@ -1,0 +1,15 @@
+Source: ultinous-google-cloud-cpp
+Section: libs
+Priority: optional
+Maintainer: FRANK Kristof <oturw@ultinous.com>
+Build-Depends: debhelper (>= 10)
+Standards-Version: 4.1.2
+Homepage: https://github.com/googleapis/google-cloud-cpp
+#Vcs-Git: https://anonscm.debian.org/git/collab-maint/ultinous-google-cloud-cpp.git
+#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/ultinous-google-cloud-cpp.git
+
+Package: ultinous-google-cloud-cpp
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: <insert up to 60 chars description>
+ 

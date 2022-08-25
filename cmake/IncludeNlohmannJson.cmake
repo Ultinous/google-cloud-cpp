@@ -15,7 +15,7 @@
 # ~~~
 
 function (find_nlohmann_json)
-    find_package(nlohmann_json CONFIG QUIET)
+    find_package(nlohmann_json QUIET)
     if (nlohmann_json_FOUND)
         return()
     endif ()
