@@ -9,9 +9,9 @@ class UltinousGoogleCloudCppDeps(ConanFile):
       ("googleapis/cci.20220711"),
       ("grpc/1.45.2"),
       ("grpc-proto/cci.20220627"),
-      ("libcurl/7.80.0"),
+      ("libcurl/7.84.0"),
       ("nlohmann_json/3.10.5"),
-      ("openssl/1.1.1n"),
+      ("openssl/1.1.1q"),
       ("protobuf/3.21.4"),
       ("re2/20220201"),
       ("zlib/1.2.12")

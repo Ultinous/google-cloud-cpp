@@ -1,5 +1,11 @@
+ultinous-google-cloud-cpp (1.40.2ultinous1) bionic; urgency=medium
+
+  * change dependencies
+
+ -- FRANK Kristof <oturw@ultinous.com>  Thu, 25 Aug 2022 19:19:24 +0000
+
 ultinous-google-cloud-cpp (1.40.2) unstable; urgency=medium
 
   * Initial Release.
 
- -- FRANK Kristof <oturw@hans.lan.ultinous.com>  Thu, 25 Aug 2022 10:19:42 +0000
+ -- FRANK Kristof <oturw@ultinous.com>  Thu, 25 Aug 2022 10:19:42 +0000
